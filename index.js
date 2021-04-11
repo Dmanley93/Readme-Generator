@@ -57,17 +57,36 @@ inquirer
 
      const licenses = [
        {name: "MIT",
-       shield:"[![License:MIT](https://img.shields.io/badge/license-MIT-blue)]",
-       name: "GNU",
-       shield:"[![License:GNU](https://img.shields.io/badge/license-GNU-green)]",
-       name: "Apache",
-       shield:"[![License:Apache](https://img.shields.io/badge/license-Apache-red)]",}
+       shield:"[![License:MIT](https://img.shields.io/badge/license-MIT-blue)]"},
+       {name: "GNU",
+       shield:"[![License:GNU](https://img.shields.io/badge/license-GNU-green)]"},
+       {name: "Apache",
+       shield:"[![License:Apache](https://img.shields.io/badge/license-Apache-red)}]",}
      ]
+
      licenses.forEach(getLicense);
-     function getLicense(item, index) {
+
+     function getLicense(name, shield) {
        
      }
+    const responseText = `
+    # ${data.title}
+    
+## Description
+
+## Table of Contents
+${tableOfContents}
+
+## Installation
+
+
+## Usage
+
+
+## License
+`
    console.log(response.license)
+
         fs.writeFile('log.txt', responseText, (err) =>
         err ? console.error(err) : console.log('Success!')
     );
