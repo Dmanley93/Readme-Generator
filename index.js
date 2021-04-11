@@ -63,7 +63,7 @@ inquirer
        name: "Apache",
        shield:"[![License:Apache](https://img.shields.io/badge/license-Apache-red)]",}
      ]
-     fruits.forEach(getLicense);
+     licenses.forEach(getLicense);
      function getLicense(item, index) {
        
      }
